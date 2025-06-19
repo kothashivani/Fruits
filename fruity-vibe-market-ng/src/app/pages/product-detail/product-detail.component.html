@@ -1,0 +1,13 @@
+<div class="product-detail-container">
+  <h2>Product Detail</h2>
+  <div *ngIf="product; else notfound">
+    <img [src]="product.imageUrl || " [alt]="product.name || " style="max-width: 300px;">
+    <h3>{{ product.name }}</h3>
+    <p><strong>Price:</strong> {{ product.price | currency }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+    <button (click)="addToCart(product)">Add to Cart</button>
+  </div>
+  <ng-template #notfound>
+    <p>Product not found or loading...</p>
+  </ng-template>
+</div>

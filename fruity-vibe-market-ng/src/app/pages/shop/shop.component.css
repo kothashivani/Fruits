@@ -1,0 +1,27 @@
+.shop-container { padding: 20px; }
+.shop-container h2 { text-align:center; margin-bottom: 20px; }
+.shop-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.shop-controls input[type='text'] {
+  flex-grow: 1;
+  min-width: 200px;
+}
+.shop-controls select {
+  min-width: 180px;
+}
+
+@media (max-width: 600px) {
+  .shop-controls {
+    flex-direction: column;
+  }
+  .shop-controls input[type='text'],
+  .shop-controls select {
+    width: 100%;
+  }
+}

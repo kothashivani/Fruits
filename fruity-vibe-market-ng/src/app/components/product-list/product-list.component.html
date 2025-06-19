@@ -1,0 +1,10 @@
+<div class="product-list-grid">
+  <app-product-card
+    *ngFor="let product of (products$ | async)"
+    [product]="product"
+    (addToCartEvent)="addToCart(\$event)">
+  </app-product-card>
+</div>
+<div *ngIf="!(products$ | async)?.length">
+  <p>No products found matching your criteria.</p>
+</div>

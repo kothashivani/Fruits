@@ -1,0 +1,15 @@
+<div class="shop-container">
+  <h2>Shop All Products</h2>
+  <div class="shop-controls">
+    <input type="text" placeholder="Search products..." (input)="onSearch($event)">
+    <select (change)="onCategoryChange($event)">
+      <option value="All">All Categories</option>
+      <option value="Fruit">Fruits</option>
+      <option value="Vegetable">Vegetables</option>
+      <option value="Other">Other</option>
+      <!-- Add more categories as needed -->
+    </select>
+  </div>
+  <!-- ProductListComponent will be used here -->
+  <app-product-list [categoryFilter]="selectedCategory" [searchTermFilter]="searchTerm"></app-product-list>
+</div>

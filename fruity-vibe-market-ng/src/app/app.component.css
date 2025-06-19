@@ -1,0 +1,11 @@
+/* Make sure the app content pushes the footer down */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main { /* Assuming router-outlet is wrapped in main or similar */
+  flex: 1; /* Allows main content to grow and push footer */
+  padding-bottom: 20px; /* Space above footer */
+}
