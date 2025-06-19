@@ -1,0 +1,27 @@
+.home-container .hero {
+  background-color: #e9ecef;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.home-container .hero h1 {
+  font-size: 2.8em;
+  color: #28a745;
+  margin-bottom: 0.5em;
+}
+.home-container .hero p {
+  font-size: 1.3em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+.home-container .hero button {
+  font-size: 1.2em;
+  padding: 12px 25px;
+}
+.home-container .featured-products h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #333;
+}

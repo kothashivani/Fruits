@@ -1,0 +1,11 @@
+<header class="app-header">
+  <nav>
+    <div class="logo"><a routerLink="/">Logo/Home</a></div>
+    <ul>
+      <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+      <li class="cart-icon"><a routerLink="/cart" routerLinkActive="active"><span class="cart-text">Cart</span> <span class="cart-count">{{ (cartService.getCartItemCount() | async) || 0 }}</span></a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,25 @@
+.cart-container { padding: 20px; }
+.cart-container h2 { text-align: center; margin-bottom: 20px; }
+.cart-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.cart-container th, .cart-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.cart-container th { background-color: #f2f2f2; }
+.cart-container td input[type='number'] { width: 60px; text-align: center; }
+.cart-container .cart-summary {
+  text-align: right;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.cart-container .cart-summary h3 { margin: 10px 0; }
+.cart-container .cart-summary button { margin-top: 15px; }
+.empty-cart p { text-align: center; font-size: 1.2em; }
